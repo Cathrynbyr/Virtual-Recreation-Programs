@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+
+/*
+  Typography and Color Styles for Virtual Recreation Programs.html
+   
+   Filename: Vrp_styles.css*/
+
+
+/* HTML and Body Styles */
+
+html {
+	background: antiquewhite;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
+
+body {
+	background: ivory;
+	margin: auto;
+	min-height: 820px;
+	min-width: 200px;
+	max-width: 1024px;
+	max-height: 1200px;
+}
+
+footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+body > div#intro_1 {
+	display: block;
+	width: 60%;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 300px;
+	text-align: left;
+	overflow: auto;
+}
+
+body > img#med1 {
+	width: 40%;
+	height: 300px;
+	padding-left: 10px;
+	float: right;
+}
+
+img#bioPic {
+	display: block;
+	height: 300px;
+	width: 25%;
+	float: right;
+	padding-top: 40px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+div#bio_1 {
+	display: block;
+	width: 60%;
+	height: 400px;
+	padding-left: 10px;
+	text-indent: 10px;
+	overflow: auto;
+}
+
+div.staff2 {
+	display: block;
+	height: 225px;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 20px;
+	text-indent: 10px;
+	overflow: auto;
+}
+
+
+/* Text Styles*/
+
+body {
+	font-family: "Acme", sans-serif;
+    height: 12pt; 
+}  
+
+body p {
+  	font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: justify;
+
+}
+
+h2#intro_2 {
+ 	font-family: sans-serif;
+ 	padding-left: 10px;
+ 	text-align: left;
+ }
+
+ h2.staff1 {
+ 	font-family: sans-serif;
+ 	margin-top: 10px;
+ 	text-align: center;
+ 	font-size: 1.75em;
+ }
+section#cal2  {
+	display: block;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 30px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+}
+
+h1#cal3 {
+	display: block;
+	text-align: center;
+	color: rgb(255, 75, 75);
+	font-family: sans-serif;
+	font-size: 1.5em;
+
+}
+h1#cal4 {
+	display: block;
+	text-align: center;
+	color: rgb(255, 75, 75);
+	font-family: sans-serif;
+	font-size: 1.25em;
+	margin-top: 20px;
+}
+
+
+
+/* Header Styles*/
+
+body > header > img {
+	display: block;
+	height: 40%;
+	width: 100%
+}
+
+body > header > h1 {
+	color: white;
+	background-color: rgb(255, 75, 75);
+	font-size: 1.5em;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 6px;
+}
+
+body > header > h2 {
+	color: white;
+	background-color: rgb(255, 75, 75);
+	font-size: 1.25em;
+	padding-top: -2px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+/*nav styles*/
+body header nav ul li a {
+	width: 100%;
+	margin: auto;
+}
+
+body header nav ul li a {
+	background-color: rgb(255, 75, 75);	
+	display: block;
+	float: left;
+	text-align: center;
+	width: 25%;	
+}
+
+body header nav ul li a {
+	color: white;	
+	display: block;
+	height: 1.5em;	
+	text-align: center;
+	line-height: 1.5em;	
+}
+
+nav a:link, nav a:visited {
+	color: white;
+}
+
+nav a:hover, nav a:active {
+	background-color: rgb(255, 120, 120);
+}
+
+/* Section Styles for flex box divs*/
+
+h1#Acti  {
+	 color: rgb(255, 75, 75);
+  	font-family: sans-serif;
+  	font-size: 1.25em;
+  	line-height: 1.50em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+
+figcaption {
+	font-size: .9em;
+	line-height: 2em;
+	padding-top: 2px;
+	padding-bottom: 20;
+
+}
+
+section#ProGrams div {
+	width: 210px;
+}
+
+
+
+/* Grid Columns Styles */
+
+
+
+
+/* Footer Styles*/
+footer address  {
+	font-size: 0.9em;
+	text-align: center;
+	color: white;
+	background-color: rgb(255, 75, 75);
+	padding: 10px;
+}
+
+/* mobile styles 0px to 600 px (was 480 on project) */
+@media only screen and (max-width: 600px) {
+	nav a {
+		font-size: .9em;
+		line-height: 2em;
+	}
+ 
+  body {
+  	background: antiquewhite;
+  }
+	
+	body > img#med1 {
+		display: none;
+	}
+
+	body > div#intro_1 {
+		width: 95%;
+    }
+
+    body > div#intro_2 p {
+    	font-size: 0.6em;
+    	text-align: left;
+    	overflow: hidden;
+    }
+
+    body > header > h1, {
+    	font-size: 1.1em;
+    }
+
+    body > header > h2 {
+    	font-size: 1em;
+    }
+
+    footer address  {
+    	font-size: 0.8em;
+	}
+
+		body > img#bioPic {
+		display: none;
+	}
+
+	body > div#bio_1  {
+		width: 95%;
+		text-align: left;
+		overflow: auto;
+		font-size: .9em;
+	}
+
+/* mobile styles 0px to 680 */
